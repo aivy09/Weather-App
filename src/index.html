@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Weather</title>
+		<script
+			src="https://kit.fontawesome.com/757bf40f51.js"
+			crossorigin="anonymous"></script>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="src/styles.css" />
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<form id="input-group">
+				<br />
+				<div class="col-4">
+					<div class="input-group">
+						<input
+							type="text"
+							placeholder="Enter city"
+							aria-label="city"
+							autocomplete="off"
+							autofocus="on"
+							id="search-city" />
+						<span class="searchButton" id="searchButton">
+							<button class="btn btn-primary" type="submit">
+								Search
+							</button></span
+						>
+						<span class="currentButton"
+							><button class="current">Current</button></span
+						>
+					</div>
+				</div>
+			</form>
+			<br />
+			<br />
+			<div class="today">
+				<div class="row">
+					<div class="col-sm-1 todayIcon">⛅</div>
+					<div class="col-4 col-sm-2 todayCity">
+						<div class="todaySeattle" id="current-city">Seattle</div>
+						<div class="todayTime" id="todayTime">Wednesday 10:00</div>
+
+						<div class="row">
+							<div class="todayTemp">
+								<span id="todayWarm">66ºF | </span>
+								<span id="todayCold">52ºF</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="todayWeather">Partly Cloudy</div>
+						</div>
+					</div>
+					<div class="col-3 col-sm-2 other">
+						<br /><br /><br />
+						<div class="humidity">Humidity: 50%</div>
+						<div class="wind">Wind: 10 km/h</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="src/script.js"></script>
+	</body>
+</html>
